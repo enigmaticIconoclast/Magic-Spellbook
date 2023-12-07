@@ -1,0 +1,117 @@
+﻿@page
+@model Magic_Spellbook.Pages.Decks.DeckDetailsModel
+@{
+}
+
+<div class="Container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2>
+                Test Deck 1 Decklist
+            </h2>
+        </div>
+    </div>
+    <table class="table table-boardered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Card Name
+                </th>
+                <th>
+                    Card Type
+                </th>
+                <th>
+                    Card Rules Text
+                </th>
+                <th>
+                    Card Colors
+                </th>
+                <th>
+                    Card Set
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    &nbsp;
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width:10%">Vorinclex, Monstrous Raider</td>
+                <td style="width:10%">
+                    Legendary Creature — Phyrexian Praetor
+                </td>
+                <td style="width:48%">
+                    Trample, haste
+                    If you would put one or more counters on a permanent or player, put twice that many of each of those kinds of counters on that permanent or player instead.
+                    If an opponent would put one or more counters on a permanent or player, they put half that many of each of those kinds of counters on that permanent or player instead, rounded down.
+                </td>
+                <td style="width:5%">
+                    G
+                </td>
+                <td style="width:5%">
+                    Kaldheim
+                </td>
+                <td style="width:12%">
+                    <div class="w-75">
+                        <button class="btn btn-success">
+                            +
+                        </button>
+                        <button class="disabled">
+                            2
+                        </button>
+                        <button class="btn btn-danger">
+                            -
+                        </button>
+                    </div>
+                </td>
+                <td style="width:10%">
+                    <div class="w-75">
+                        <a asp-page="/Cards/CardDetails" class="btn btn-primary mx-2">
+                            <i class="bi bi-pencil-square"></i> Card Details
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:10%">Yawgmoth, Thran Physician</td>
+                <td style="width:10%">
+                    Legendary Creature — Human Cleric
+                </td>
+                <td style="width:48%">
+                    Protection from Humans
+                    Pay 1 life, Sacrifice another creature: Put a -1/-1 counter on up to one target creature and draw a card.
+                    {B}{B}, Discard a card: Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)
+                </td>
+                <td style="width:5%">
+                    B
+                </td>
+                <td style="width:5%">
+                    Modern Horizons
+                </td>
+                <td style="width:12%">
+                    <div class="w-75">
+                        <button class="btn btn-success">
+                            +
+                        </button>
+                        <button class="disabled">
+                            4
+                        </button>
+                        <button class="btn btn-danger">
+                            -
+                        </button>
+                    </div>
+                </td>
+                <td style="width:10%">
+                    <div class="w-75">
+                        <a asp-page="/Cards/CardDetails" class="btn btn-primary mx-2">
+                            <i class="bi bi-pencil-square"></i> Card Details
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

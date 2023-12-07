@@ -1,0 +1,23 @@
+﻿@page
+@model Magic_Spellbook.Pages.Decks.NewDeckModel
+@{
+}
+
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <form id="deckCreationForm" method="post">
+            <h2>New Deck</h2>
+            <div class="form-floating mb-3">
+                <input class="form-control" autocomplete="Name" aria-required="true" placeholder="sampledeck" />
+                <label>Deck Name</label>
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" autocomplete="Format" aria-required="true" placeholder="Commander" />
+                <label>Format</label>
+                <span class="text-danger"></span>
+            </div>
+            <button id="deckCreationSubmit" type="submit" class="w-100 btn btn-lg btn-primary">New Deck</button>
+        </form>
+    </div>
+</div>

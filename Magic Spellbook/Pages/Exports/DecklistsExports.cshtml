@@ -1,0 +1,21 @@
+﻿@page
+@model Magic_Spellbook.Pages.Exports.DecklistsExportsModel
+@{
+    ViewData["Ttile"] = "Export Decklists";
+}
+
+<h1 class="mx-auto">@ViewData["Title"]</h1>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Export to .CSV File</h2>
+        <button class="w-100 btn btn-large btn-success">CSV</button>
+    </div>
+    <div class="col-md-4">
+        <h2>Copy to Clipboard</h2>
+        <button class="w-100 btn btn-large btn-success">Clipboard</button>
+    </div>
+    <div class="col-md-4">
+        <h2>Export to .txt File</h2>
+        <button class="w-100 btn btn-large btn-success">Plain Text</button>
+    </div>
+</div>

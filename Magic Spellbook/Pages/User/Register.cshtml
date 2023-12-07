@@ -1,0 +1,36 @@
+﻿@page
+@model Magic_Spellbook.Pages.User.RegisterModel
+
+@{
+    ViewData["Title"] = "Sign up";
+}
+
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <form id="signupForm" method="post">
+            <h2>Sign up for Magic Spellbook</h2>
+            <div class="form-floating mb-3">
+                <input class="form-control" autocomplete="email" aria-required="true" placeholder="sample@email.com"/>
+                <label>Email</label>
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" autocomplete="username" aria-required="true" placeholder="username" />
+                <label>Username</label>
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label>Password</label>
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label>Re-Enter Password</label>
+                <span class="text-danger"></span>
+            </div>
+
+            <button id="signupSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Sign Up</button>
+        </form>
+    </div>
+</div>

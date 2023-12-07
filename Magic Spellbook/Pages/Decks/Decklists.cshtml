@@ -1,0 +1,50 @@
+﻿@page
+@model Magic_Spellbook.Pages.Decks.DecklistsModel
+@{
+}
+<div class="container">
+    <div>
+        <h2>Decklists</h2>
+    </div>
+    <div class="row">
+        <div class="card col-md-4 me-3 w-25">
+            <img class="card-img-top" src="https://static.cardkingdom.com/images/magic-the-gathering/kaldheim/vorinclex-monstrous-raider-29874.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Test Deck 1</h5>
+                <p class="card-text">Standard Deck</p>
+                <a asp-page="/Decks/DeckDetails" class="btn btn-primary mx-2">
+                    <i class="bi bi-pencil-square"></i> Deck Details
+                </a>
+                <a asp-page="" class="btn btn-danger mx-2">
+                    <i class="bi bi-pencil-square"></i> Delete Deck
+                </a>
+            </div>
+        </div>
+        <div class="card col-md-4 me-3 w-25">
+            <img class="card-img-top" src="https://static.cardkingdom.com/images/magic-the-gathering/kaldheim/vorinclex-monstrous-raider-29874.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Test Deck 2</h5>
+                <p class="card-text">Modern Deck</p>
+                <a asp-page="" class="btn btn-primary mx-2">
+                    <i class="bi bi-pencil-square"></i> Deck Details
+                </a>
+                <a asp-page="" class="btn btn-danger mx-2">
+                    <i class="bi bi-pencil-square"></i> Delete Deck
+                </a>
+            </div>
+        </div>
+        <div class="card col-md-4 me-3 w-25">
+            <img class="card-img-top" src="https://static.cardkingdom.com/images/magic-the-gathering/kaldheim/vorinclex-monstrous-raider-29874.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Test Deck 3</h5>
+                <p class="card-text">Commander Deck</p>
+                <a asp-page="" class="btn btn-primary mx-2">
+                    <i class="bi bi-pencil-square"></i> Deck Details
+                </a>
+                <a asp-page="" class="btn btn-danger mx-2">
+                    <i class="bi bi-pencil-square"></i> Delete Deck
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,153 @@
+﻿@page
+@model Magic_Spellbook.Pages.Cards.CardSearchModel
+@{
+    ViewData["Title"] = "Card Search";
+}
+
+<form>
+    <div class="input-group rounded">
+        <input type="search" class="form-control rounded" placeholder="Card Name" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+            <button class="w-100 btn btn-lg btn-primary">Search</button>
+        </span>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Card Colors:</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    White
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Blue
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Black
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Red
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Green
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>Card Types:</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Artifact
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Battle
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Creature
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Enchantment
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Instant
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Land
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Planeswalker
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Sorcery
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>Set</h2>
+            <select class="select w-100" multiple>
+                <option value="Alpha">Alpha</option>
+                <option value="Beta">Beta</option>
+                <option value="Kamigawa Neon Dynasty">Kamigawa Neon Dynasty</option>
+                <option value="Phyrexia All Will be One">Phyrexia All Will be One</option>
+                <option value="Gatecrash">Gatecrash</option>
+            </select>
+        </div>
+    </div>
+</form>
+<br />
+<div class="row">
+    <div class="card col-md-4 me-3 w-25">
+        <img class="card-img-top" src="https://static.cardkingdom.com/images/magic-the-gathering/kaldheim/vorinclex-monstrous-raider-29874.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Vorinclex, Monstrous Raider</h5>
+            <p class="card-text">Legendary Creature - Phyrexian Praetor Kaldheim 6/6</p>
+            <a asp-page="/Cards/CardCollection" class="btn btn-primary mx-2">
+                <i class="bi bi-pencil-square"></i> Add to Collection
+            </a>
+            <a asp-page="/Cards/CardDetails" class="btn btn-primary mx-2">
+                <i class="bi bi-pencil-square"></i> Card Details
+            </a>
+        </div>
+    </div>
+    <div class="card col-md-4 me-3 w-25">
+        <img class="card-img-top" src="https://static.cardkingdom.com/images/magic-the-gathering/kaldheim/vorinclex-monstrous-raider-29874.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Vorinclex, Monstrous Raider</h5>
+            <p class="card-text">Legendary Creature - Phyrexian Praetor Kaldheim 6/6</p>
+            <a asp-page="/Cards/CardCollection" class="btn btn-primary mx-2">
+                <i class="bi bi-pencil-square"></i> Add to Collection
+            </a>
+            <a asp-page="/Cards/CardDetails" class="btn btn-primary mx-2">
+                <i class="bi bi-pencil-square"></i> Card Details
+            </a>
+        </div>
+    </div>
+    <div class="card col-md-4 me-3 w-25" >
+        <img class="card-img-top" src="https://static.cardkingdom.com/images/magic-the-gathering/kaldheim/vorinclex-monstrous-raider-29874.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Vorinclex, Monstrous Raider</h5>
+            <p class="card-text">Legendary Creature - Phyrexian Praetor Kaldheim 6/6</p>
+            <a asp-page="/Cards/CardCollection" class="btn btn-primary mx-2">
+                <i class="bi bi-pencil-square"></i> Add to Collection
+            </a>
+            <a asp-page="/Cards/CardDetails" class="btn btn-primary mx-2">
+                <i class="bi bi-pencil-square"></i> Card Details
+            </a>
+        </div>
+    </div>
+</div>
+
